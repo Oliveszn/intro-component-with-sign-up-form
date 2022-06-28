@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+}
+
+.left {
+  margin: 13% 9%;
+  width: 30%;
+}
+
+h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  word-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  color: white;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+
+.right {
+  padding: 1rem;
+}
+
+.form-text {
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  width: 75%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+form {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  width: 75%;
+  border-radius: 7px;
+  margin-top: 1.5rem;
+}
+
+.form-control {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.2rem;
+  position: relative;
+}
+
+.form-control input {
+  padding: 0.4rem 0.9rem;
+  width: 100%;
+  position: relative;
+  display: block;
+  outline: none;
+}
+
+.form-control small {
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.form-control.success input {
+  border-color: hsl(154, 59%, 51%);
+}
+
+.form-control.error small {
+  color: hsl(0, 100%, 74%);
+  visibility: visible;
+}
+
+.form-control i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  color: hsl(154, 59%, 51%);
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: hsl(0, 100%, 74%);
+  visibility: visible;
+}
+
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.9em 0.9em;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.65;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 700px) {
+  main {
+    display: block;
+  }
+
+  .left {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .right {
+    margin-top: 2em;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form-text {
+    width: 100%;
+  }
+}
